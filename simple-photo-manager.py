@@ -2,7 +2,11 @@ import argparse
 
 from spm.app_args import add_arguments
 from spm.config.loader import load_config
+from spm.file_managment.copy import copy_files
 
+actions = dict(
+    copy = copy_files
+)
 
 def main():
     parser = argparse.ArgumentParser(description="Simply manage Your photos")
@@ -11,7 +15,7 @@ def main():
 
     config = load_config(args.config)
 
-    print(config.file_scheme.format(config.ids[0]))
+    actions[config.action](config)
     pass
 
 

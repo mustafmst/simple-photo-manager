@@ -1,0 +1,16 @@
+{
+    "file-scheme": "IMG_{}.JPG",
+    "action": "copy",
+    "from": "sylwester 2017-2018",
+    "to": "do-wywolania",
+    "ids": [
+        1118,
+        1129,
+        1141,
+        1170,
+        1209,
+        1274,
+        1292,
+        1306
+    ]
+}
